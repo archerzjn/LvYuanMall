@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.zjn.lvyuan</groupId>
-    <artifactId>lvyuan-product</artifactId>
+    <artifactId>LvYuanMall</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>lvyuan</name>
+    <name>LvYuanMall</name>
     <description>聚合服务</description>
     <packaging>pom</packaging>
     <modules>
