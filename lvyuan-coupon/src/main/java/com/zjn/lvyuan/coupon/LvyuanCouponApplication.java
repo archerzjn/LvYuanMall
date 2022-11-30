@@ -1,0 +1,13 @@
+package com.zjn.lvyuan.coupon;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class LvyuanCouponApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(LvyuanCouponApplication.class, args);
+	}
+
+}
