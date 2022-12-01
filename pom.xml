@@ -15,5 +15,6 @@
         <module>lvyuan-order</module>
         <module>lvyuan-product</module>
         <module>lvyuan-ware</module>
+        <module>renren-fast</module>
     </modules>
 </project>
