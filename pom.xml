@@ -11,7 +11,7 @@
 
     <modules>
         <module>lvyuan-coupon</module>
-        <module>lvyuan-menber</module>
+        <module>lvyuan-member</module>
         <module>lvyuan-order</module>
         <module>lvyuan-product</module>
         <module>lvyuan-ware</module>

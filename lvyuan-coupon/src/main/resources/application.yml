@@ -6,7 +6,7 @@ server:
     min-spare-threads: 30
   port: 9091
   servlet:
-    context-path: /renren-fast
+    context-path: /lvyuan
 
 spring:
   # 环境 dev|test|prod
