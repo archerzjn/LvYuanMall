@@ -9,20 +9,16 @@
     <description>公共模块</description>
     <properties>
         <java.version>8</java.version>
-        <mybatisplus.version>3.2.0</mybatisplus.version>
         <lombok.version>1.18.8</lombok.version>
         <httpcore.version>4.4.12</httpcore.version>
         <lang.version>2.6</lang.version>
         <validation.version>2.0.1.Final</validation.version>
+        <mybatisplus.version>3.2.0</mybatisplus.version>
+        <mysql.version>8.0.28</mysql.version>
         <druid.version>1.2.8</druid.version>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>${mybatisplus.version}</version>
-        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -43,6 +39,18 @@
             <artifactId>validation-api</artifactId>
             <version>${validation.version}</version>
         </dependency>
+
+        <!--数据库相关-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${mybatisplus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
@@ -52,6 +60,13 @@
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>${druid.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
