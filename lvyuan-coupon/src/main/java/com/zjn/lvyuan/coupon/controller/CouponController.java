@@ -3,7 +3,10 @@ package com.zjn.lvyuan.coupon.controller;
 import java.util.Arrays;
 import java.util.Map;
 
+import jdk.nashorn.internal.ir.annotations.Reference;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 
 import com.zjn.lvyuan.coupon.entity.CouponEntity;
@@ -19,11 +22,22 @@ import com.zjn.lvyuan.common.utils.R;
  * @email zjn28282@qq.com
  * @date 2022-12-04 18:11:20
  */
+@RefreshScope
 @RestController
 @RequestMapping("coupon/coupon")
 public class CouponController {
     @Autowired
     private CouponService couponService;
+
+    @Value("${coupon.name:zjn}")
+    public String name;
+    @Value("${coupon.age:20}")
+    public String age;
+
+    @GetMapping("/test")
+    public R test() {
+        return R.ok().put("name", name).put("age", age);
+    }
 
     @GetMapping("getCoupon")
     public R getCoupon() {

@@ -14,9 +14,9 @@
         <lang.version>2.6</lang.version>
         <validation.version>2.0.1.Final</validation.version>
         <mybatisplus.version>3.2.0</mybatisplus.version>
-        <mysql.version>8.0.28</mysql.version>
-        <cloud.version>2021.0.1.0</cloud.version>
+        <mysql.version>8.0.17</mysql.version>
         <druid.version>1.2.8</druid.version>
+        <cloud.version>2.1.0.RELEASE</cloud.version>
     </properties>
 
     <dependencies>
@@ -69,18 +69,19 @@
             <version>2.5</version>
             <scope>provided</scope>
         </dependency>
+
+        <!--nacos 做注册中心-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.netflix.ribbon</groupId>
-                    <artifactId>ribbon</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
-
+        <!--nacos 做配置管理-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
     </dependencies>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -89,10 +90,10 @@
                 <version>${cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-
             </dependency>
         </dependencies>
     </dependencyManagement>
+
     <build>
         <plugins>
             <plugin>

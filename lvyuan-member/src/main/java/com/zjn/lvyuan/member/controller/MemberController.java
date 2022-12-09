@@ -29,6 +29,11 @@ public class MemberController {
     @Autowired
     CouponFeign couponFeign;
 
+    /**
+     * feign测试
+     *
+     * @return
+     */
     @GetMapping("memberCoupon")
     public R getMemberCoupon() {
         MemberEntity entity = new MemberEntity();
