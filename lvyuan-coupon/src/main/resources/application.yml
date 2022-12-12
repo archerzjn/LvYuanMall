@@ -1,20 +1,16 @@
 # Tomcat
-server:
-  tomcat:
-    uri-encoding: UTF-8
-    max-threads: 1000
-    min-spare-threads: 30
-  port: 9500
-  servlet:
-    context-path: /lvyuan
-
-spring:
-  # 环境 dev|test|prod
-  profiles:
-    active: dev
-  application:
-    name: lvyuan-coupon
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 127.0.0.1:8848
+#server:
+#  tomcat:
+#    uri-encoding: UTF-8
+#    max-threads: 1000
+#    min-spare-threads: 30
+#  port: 9500
+#  servlet:
+#    context-path: /lvyuan
+#
+#spring:
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8848
+#        namespace: 3a12c544-bd94-4fdf-8596-f83c7f67820f
