@@ -2,8 +2,7 @@ package com.zjn.lvyuan.product;
 
 import com.zjn.lvyuan.product.entity.BrandEntity;
 import com.zjn.lvyuan.product.service.BrandService;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
