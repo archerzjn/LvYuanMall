@@ -6,12 +6,12 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.8.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
-    <groupId>com.zjn.lvyuan.getway</groupId>
-    <artifactId>lvyuan-getway</artifactId>
+    <groupId>com.zjn.lvyuan</groupId>
+    <artifactId>getway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>lvyuan-getway</name>
+    <name>getway</name>
     <description>网关</description>
     <properties>
         <java.version>8</java.version>

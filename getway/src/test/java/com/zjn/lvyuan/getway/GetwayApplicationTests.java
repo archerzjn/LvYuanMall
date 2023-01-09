@@ -1,10 +1,10 @@
 package com.zjn.lvyuan.getway;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LvyuanGetwayApplicationTests {
+class GetwayApplicationTests {
 
     @Test
     void contextLoads() {
