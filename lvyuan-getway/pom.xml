@@ -9,9 +9,9 @@
         <relativePath/>
     </parent>
     <groupId>com.zjn.lvyuan</groupId>
-    <artifactId>getway</artifactId>
+    <artifactId>lvyuan-getway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>getway</name>
+    <name>lvyuan-getway</name>
     <description>网关</description>
     <properties>
         <java.version>8</java.version>

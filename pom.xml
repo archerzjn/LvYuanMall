@@ -15,7 +15,7 @@
         <module>lvyuan-order</module>
         <module>lvyuan-product</module>
         <module>lvyuan-ware</module>
-        <module>getway</module>
+        <module>lvyuan-getway</module>
         <module>lvyuan-common</module>
         <module>renren-fast</module>
         <module>renren-generator</module>
